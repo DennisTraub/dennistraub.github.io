@@ -1,22 +1,58 @@
 baseURL = 'https://dennistraub.github.io/'
 languageCode = 'en-us'
-title = 'Dennis Traub'
-theme = 'paper'
+title = 'Dennis Traub - Software Engineer & Developer Advocate'
+copyright = 'Dennis Traub'
+theme = 'hugo-theme-til'
 
 [params]
-  # Paper theme settings
-  color = 'light'
-  twitter = 'dtraub'
-  github = 'dennistraub'
+  dateFormat = 'January 2, 2006 - 3:04 pm'
+  showGraph = false
+  [params.author]
+    name = 'Dennis Traub'
+    email = 'dennis.traub@gmail.com'
+  [params.home]
+    showRecentPosts = true
+    recentPostsLimit = 3
+    showRecentNotes = true
+    recentNotesLimit = 5
+  [params.notes]
+    pageSize = 20
+    showCategoryFilter = true
+  [params.footer]
+    showThemeCredit = false
+  [params.robotstxt]
+    blockCC = false
+    blockAI = false
+#  # Paper theme settings
+#  color = 'light'
+#  twitter = 'dtraub'
+#  github = 'dennistraub'
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+[outputs]
+  home = ['html']
+  section = ['html', 'rss', 'json']
+  page = ['html']
+
+[menus]
+  [[menus.main]]
+    name = 'Notes'
+    pageRef = '/notes'
     weight = 20
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 30
+#  [[menus.main]]
+#    name = 'Graph'
+#    pageRef = '/graph'
+#    weight = 40
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = 'tokyonight-night'
+
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
