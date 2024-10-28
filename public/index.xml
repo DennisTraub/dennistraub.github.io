@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dennis Traub</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Dennis Traub</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Oct 2024 21:06:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 28 Oct 2024 21:06:07 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a Software Engineer and Developer Advocate at AWS, where I curremntly spend most of my time exoploring the impact of AI, what new skills we need to learn, and how we can keep up with all the new developments without going insane.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing JetBrains Fleet</title>
+      <link>http://localhost:1313/posts/2024-10-28/</link>
+      <pubDate>Mon, 28 Oct 2024 21:04:44 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2024-10-28/</guid>
+      <description>&lt;p&gt;I’m testing &lt;a href=&#34;https://www.jetbrains.com/fleet/&#34;&gt;JetBrains Fleet&lt;/a&gt; today. It feels a bit odd because I’m used to fully featured IDEs like IntelliJ IDEA, etc. Not sure if I like it yet, but I’ll give it a try for a few days and we’ll see if it can be a lightweight alternative, at least for simple editing, like writing this blog.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

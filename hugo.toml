@@ -1,0 +1,22 @@
+baseURL = 'https://dennistraub.github.io/'
+languageCode = 'en-us'
+title = 'Dennis Traub'
+theme = 'paper'
+
+[params]
+  # Paper theme settings
+  color = 'light'
+  twitter = 'dtraub'
+  github = 'dennistraub'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
