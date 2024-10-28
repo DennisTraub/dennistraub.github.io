@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <article class="main">
+    <header>
+      <h1 class="!mb-1">{{ .Title | title }}</h1>
+
+      {{- with .Date }}
+        {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" -}}
+        {{- $dateHuman := . | time.Format (default ":date_long" site.Params.dateFormat) -}}
+        <div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="{{ $dateMachine }}"
+            >{{ $dateHuman }}</time
+          >
+        </div>
+      {{- end }}
+    </header>
+
+    {{ .Content }}
+  </article>
+
+  {{- if or (eq .Section "posts") (eq .Section "notes") }}
+    {{ partial "page/meta" . }}
+  {{- end }}
+{{ end }}

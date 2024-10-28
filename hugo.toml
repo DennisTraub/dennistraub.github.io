@@ -2,7 +2,7 @@ baseURL = 'https://dennistraub.github.io/'
 languageCode = 'en-us'
 title = 'Dennis Traub - Software Engineer & Developer Advocate'
 copyright = 'Dennis Traub'
-theme = 'hugo-theme-til'
+theme = 'hugo-theme-til-custom'
 
 [params]
   dateFormat = 'January 2, 2006 - 3:04 pm'

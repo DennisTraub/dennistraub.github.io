@@ -1,0 +1,10 @@
+{{- $id := printf "codeblock-%02d" ( add .Ordinal 1) -}}
+<figure class="codeblock not-prose scroll-mt-8" id="{{ $id }}">
+  <p class="sr-only">{{ .Type }} code snippet start</p>
+  {{ transform.Highlight .Inner .Type .Options }}
+  <p class="sr-only">{{ .Type }} code snippet end</p>
+
+  {{ with .Attributes.caption }}
+    <figcaption class="text-center italic text-neutral-600 dark:text-white/70">{{ . }}</figcaption>
+  {{ end }}
+</figure>

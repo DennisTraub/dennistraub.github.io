@@ -1,0 +1,42 @@
+<div class="not-prose">
+  <ol>
+    {{ range . }}
+      <li class="mb-3">
+        <article class="flex flex-col space-y-1">
+          <div class="flex flex-row items-center">
+          <header class="grow">
+            <div class="flex flex-row  space-x-1">
+              {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
+              {{- $dateHuman := .Date | time.Format "01/02/2006 - 3:04 pm" -}}
+              <time class="text-sm leading-5 opacity-80 whitespace-nowrap" datetime="{{ $dateMachine }}">
+                {{ $dateHuman }}:
+              </time>
+              <a
+                href="{{ .RelPermalink }}"
+                class="truncate text-sm underline decoration-slate-300 decoration-1 underline-offset-3 hover:decoration-inherit"
+                title="{{ .Title }}"
+                >{{ .Title }}</a
+              >
+            </div>
+          </header>
+          {{ with .Page.GetTerms "categories" }}
+            <ul class="flex flex-row items-center justify-end space-x-2">
+              {{ range . }}
+                <li>
+                  <a
+                    href="{{ .RelPermalink }}"
+                    class="taxonomy"
+                    title="See notes on {{ .LinkTitle }}"
+                    >{{ .LinkTitle }}</a
+                  >
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+          </div>
+          <div class="text-sm">{{ .Summary }}</div>
+        </article>
+      </li>
+    {{ end -}}
+  </ol>
+</div>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        {{ partial "header.html" . }}
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        {{ partial "footer.html" . }}
+      </footer>
+    </div>
+  </body>
+</html>
