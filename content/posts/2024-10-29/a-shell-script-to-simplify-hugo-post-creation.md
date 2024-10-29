@@ -9,9 +9,9 @@ categories: ["shell-scripting", "amazon q developer"]
 
 ## The problem with creating Hugo posts
 
-I wrote this little script to simplify creating new posts in this blog. Well, actually [Amazon Q Developer](https://aws.amazon.com/developer/generative-ai/amazon-q/?trk=bddf5c60-e524-4fac-be77-9847d064e1a7&sc_channel=el) wrote it - I just asked nicely, checked for errors, and tweaked the result a little.
+I wrote this little script to simplify creating new posts in this blog. Well, actually [Amazon Q Developer](https://aws.amazon.com/developer/generative-ai/amazon-q/?trk=bddf5c60-e524-4fac-be77-9847d064e1a7&sc_channel=el) wrote it - I just asked nicely, checked for errors, and tweaked the result until it did exactly what I wanted.
 
-If you're new to Hugo like me, you probably know you create posts by running:
+I'm a completeHugo n00b, so the only way I know to create posts is by running:
 
 ```shell
 hugo new posts/[file-name].md
