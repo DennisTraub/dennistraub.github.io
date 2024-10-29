@@ -2,6 +2,7 @@
 date = '2024-10-28T23:45:07+01:00'
 draft = false
 title = 'Jekyll or Hugo?'
+categories = ['blog', 'tools', 'ai']
 +++
 
 I've been procrastinating on setting up a new blog/website--literally--for years, and today I finally looked into static site generators that allow me to simply push my changes to a GitHub repo and let everything build on its own.

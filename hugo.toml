@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Dennis Traub - Software Engineer & Developer Advocate'
 copyright = 'Dennis Traub'
 theme = 'hugo-theme-til-custom'
+hasSummary = true
+plainIdents = true
+buildFuture = true
+summaryShape = 'classic'
 
 [params]
   dateFormat = 'January 2, 2006 - 3:04 pm'
@@ -34,10 +38,6 @@ theme = 'hugo-theme-til-custom'
   page = ['html']
 
 [menus]
-  [[menus.main]]
-    name = 'Notes'
-    pageRef = '/notes'
-    weight = 20
   [[menus.main]]
     name = 'Posts'
     pageRef = '/posts'
