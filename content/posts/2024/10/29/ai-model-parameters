@@ -1,0 +1,10 @@
++++
+title = 'That number in AI model names'
+draft = false
++++
+
+Ever wondered what the numbers, e.g. '36M' or '70B' in AI model names stand for? 
+
+These numbers show the millions (M) or billions (B) of 'parameters' - the  connections in the model's 'brain'. 70B = 70 billion connections. 
+
+More parameters = larger learning capacity. Simple as that 💡
