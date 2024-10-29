@@ -1,9 +1,10 @@
-+++
-date = '2024-10-28T23:45:07+01:00'
-draft = false
-title = 'Jekyll or Hugo?'
-categories = ['blog', 'tools', 'ai']
-+++
+---
+draft: false
+date: 2024-10-28T23:45:07+01:00
+title: Jekyll or Hugo?
+summary: After years of procrastination, I finally dove into static site generators. Jekyll didn't click, but Hugo won me over - taking just a few hours to set up with help from Claude. Here's how that conversation went.
+categories: [blog, tools, ai]
+---
 
 I've been procrastinating on setting up a new blog/website--literally--for years, and today I finally looked into static site generators that allow me to simply push my changes to a GitHub repo and let everything build on its own.
 

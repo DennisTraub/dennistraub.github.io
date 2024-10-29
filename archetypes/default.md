@@ -1,6 +1,10 @@
 ---
-date: '{{ .Date }}'
-title: '{{ replace .File.ContentBaseName "-" " " | lower | humanize }}'
 draft: false
-categories: [""]
+date: {{ .Date }}
+title: {{ replace .File.ContentBaseName "-" " " | lower | humanize }}
+summary:
+description:
+categories: []
+isNote: true
 ---
+

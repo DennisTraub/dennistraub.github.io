@@ -19,6 +19,15 @@
           </header>
 
           <div class="text-sm">{{ .Summary }}</div>
+
+          {{ $isNote := .Params.isNote }}
+          {{ if $isNote }}
+            <div class="text-sm italic opacity-70">/* End of post */<div>
+          {{ else }}
+            <a href="{{ .RelPermalink }}" class="text-sm italic opacity-70 no-underline">
+              » Read more
+            </a>
+          {{ end }}
         </article>
       </li>
     {{- end }}
