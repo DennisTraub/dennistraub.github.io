@@ -16,21 +16,12 @@ summaryShape = 'classic'
     email = 'dennis.traub@gmail.com'
   [params.home]
     showRecentPosts = true
-    recentPostsLimit = 3
-    showRecentNotes = true
-    recentNotesLimit = 5
-  [params.notes]
-    pageSize = 20
-    showCategoryFilter = true
+    recentPostsLimit = 10
   [params.footer]
     showThemeCredit = false
   [params.robotstxt]
     blockCC = false
     blockAI = false
-#  # Paper theme settings
-#  color = 'light'
-#  twitter = 'dtraub'
-#  github = 'dennistraub'
 
 [outputs]
   home = ['html']
