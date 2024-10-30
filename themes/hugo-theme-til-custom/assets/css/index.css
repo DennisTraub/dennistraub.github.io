@@ -3066,3 +3066,7 @@ footer a:hover {
     padding: 1.5rem;
   }
 }
+
+div.spaced > p {
+  margin-bottom: 0.5rem;
+}

@@ -1,8 +1,9 @@
 <div class="not-prose">
   <ol>
     {{- range . }}
+    {{ $isNote := .Params.isNote }}
       <li class="mb-6">
-        <article class="flex flex-col space-y-1">
+         <article class="flex flex-col space-y-1">
           <header>
             <h3 class="text-lg font-semibold leading-none">
               <a
@@ -17,13 +18,11 @@
               >{{ $dateHuman }}</time
             >
           </header>
-
-          <div class="text-sm">{{ .Summary }}</div>
-
-          {{ $isNote := .Params.isNote }}
           {{ if $isNote }}
+            <div class="text-sm spaced">{{ .Content }}</div>
             <div class="text-sm italic opacity-70">/* End of post */<div>
           {{ else }}
+            <div class="text-sm">{{ .Summary }}</div>
             <a href="{{ .RelPermalink }}" class="text-sm italic opacity-70 no-underline">
               » Read more
             </a>
