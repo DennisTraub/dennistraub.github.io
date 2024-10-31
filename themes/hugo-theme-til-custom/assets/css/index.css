@@ -3067,6 +3067,11 @@ footer a:hover {
   }
 }
 
+/* Custom */
+
+div.spaced > p:not(:first-child) {
+  margin-top: 0.5rem;
+}
 div.spaced > p {
   margin-bottom: 0.5rem;
 }
