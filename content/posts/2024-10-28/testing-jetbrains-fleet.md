@@ -2,7 +2,7 @@
 draft: false
 date: 2024-10-28T21:04:44+01:00
 title: Testing JetBrains Fleet
-categories: [ide, tools]
+categories: [tools, ide]
 isNote: true
 ---
 
