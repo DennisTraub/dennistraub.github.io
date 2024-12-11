@@ -8,9 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "The code that runs my blog, [dennistraub.github.io](https://dennistraub.github.io).",
   "dependencies": {
-    "eslint": "^9.13.0",
+    "eslint": "^9.16.0",
     "vis-data": "^7.1.9",
     "vis-network": "^9.1.9"
   }
