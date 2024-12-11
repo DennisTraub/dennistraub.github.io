@@ -1460,7 +1460,7 @@ a.taxonomy:hover .count {
 }
 
 .codeblock pre {
-  overflow-x: scroll;
+  overflow-x: auto;
   border-radius: 0.25rem;
   padding: 0.5rem;
   font-size: 0.875rem;
@@ -2766,8 +2766,8 @@ footer a:hover {
   }
 
   .md\:prose-lg :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    margin-top: 1.3333333em;
-    margin-bottom: 1.3333333em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .md\:prose-lg :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -2805,7 +2805,7 @@ footer a:hover {
   }
 
   .md\:prose-lg :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    margin-top: 1.7777778em;
+    margin-top: 1.5555556em;
     margin-bottom: 0.4444444em;
     line-height: 1.5555556;
   }
@@ -3074,4 +3074,19 @@ div.spaced > p:not(:first-child) {
 }
 div.spaced > p {
   margin-bottom: 0.5rem;
+}
+
+.post-list > h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 0.825rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-list > .group:hover .group-hover\:inline-block {
+  display: none;
+}
+
+p:has(+ figure.codeblock) {
+  margin-bottom: 0.4444444em;
 }
